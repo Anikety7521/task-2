@@ -12,7 +12,8 @@ pipeline {
 
         stage("installing packages") {
             steps {
-                sh 'pip install pytest -y && pip install requests'
+                sh 'pip install pytest'
+                sh 'pip install requests'
             }
         }
         
